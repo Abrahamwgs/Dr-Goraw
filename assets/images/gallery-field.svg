@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 640" role="img" aria-label="Field Research">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#001f3f"/><stop offset="1" stop-color="#0077b6"/></linearGradient></defs>
+  <rect width="600" height="640" fill="url(#g)"/>
+  <g fill="none" stroke="#ffd166" stroke-width="3" opacity="0.8"><circle cx="300" cy="260" r="70"/><line x1="300" y1="190" x2="300" y2="130"/></g>
+  <circle cx="300" cy="260" r="22" fill="#0a9396"/>
+  <path d="M0 470 Q150 430 300 470 T600 470 V640 H0 Z" fill="#0a9396" opacity="0.6"/>
+  <path d="M0 540 Q200 505 400 540 T600 540 V640 H0 Z" fill="#023e63"/>
+</svg>

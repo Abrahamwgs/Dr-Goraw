@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="Lake Tana">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#012a4a"/><stop offset="1" stop-color="#0a9396"/></linearGradient></defs>
+  <rect width="600" height="720" fill="url(#g)"/>
+  <circle cx="450" cy="150" r="80" fill="#ffd166" opacity="0.85"/>
+  <path d="M0 460 Q150 410 300 460 T600 460 V720 H0 Z" fill="#0077b6" opacity="0.7"/>
+  <path d="M0 540 Q200 500 400 540 T600 540 V720 H0 Z" fill="#023e63"/>
+  <g stroke="#90e0ef" stroke-width="2" opacity="0.4"><path d="M60 600 H540"/><path d="M90 640 H510"/></g>
+</svg>

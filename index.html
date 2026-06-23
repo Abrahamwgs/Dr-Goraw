@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050816" />
+
+    <!-- SEO -->
+    <title>Dr. Goraw Goshu — Ecohydrologist & Water Resources Expert</title>
+    <meta name="description" content="Dr. Goraw Goshu — Director of the Blue Nile Water Institute. Ecohydrologist, water resources expert, environmental scientist and research leader with 28+ years of experience and 53+ publications." />
+    <meta name="keywords" content="Goraw Goshu, Ecohydrology, Water Quality, Blue Nile Water Institute, Lake Tana, Environmental Science, Wetland Conservation, Climate Resilience, Bahir Dar University" />
+    <meta name="author" content="Dr. Goraw Goshu" />
+    <link rel="canonical" href="https://gorawgoshu.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr. Goraw Goshu — Ecohydrologist & Water Resources Expert" />
+    <meta property="og:description" content="Director, Blue Nile Water Institute. Advancing water science, ecohydrology and environmental sustainability across Africa and beyond." />
+    <meta property="og:image" content="assets/images/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preload" as="image" href="assets/images/hero-laketana.png" />
+    <link rel="preload" as="image" href="assets/images/dr-goraw-profile.png" />
+
+    <!-- Preconnect / Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dr. Goraw Goshu",
+      "jobTitle": "Director, Blue Nile Water Institute",
+      "email": "goshugoraw@gmail.com",
+      "telephone": "+251910862033",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bahir Dar", "addressCountry": "Ethiopia" },
+      "knowsAbout": ["Ecohydrology", "Water Quality", "Wetland Management", "Climate Resilience", "Environmental Science"],
+      "alumniOf": ["Wageningen University", "UNESCO-IHE", "Addis Ababa University"]
+    }
+    </script>
+</head>
+<body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- ============ LOADING SCREEN ============ -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__inner">
+            <div class="loader__ripple">
+                <span></span><span></span><span></span>
+            </div>
+            <canvas class="loader__particles" id="loaderParticles"></canvas>
+            <div class="loader__brand">DR. GORAW GOSHU</div>
+            <div class="loader__sub">Blue Nile Water Institute</div>
+            <div class="loader__progress">
+                <div class="loader__bar"><span id="loaderBar"></span></div>
+                <div class="loader__percent" id="loaderPercent">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ PROGRESS / SCROLL INDICATOR ============ -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 5l7 7-1.4 1.4-4.6-4.6V20h-2V8.8l-4.6 4.6L5 12l7-7z"/></svg>
+    </button>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__brand" data-cursor="link">
+                <span class="nav__brand-mark">GG</span>
+                <span class="nav__brand-text">Dr. Goraw Goshu<small>Ecohydrologist</small></span>
+            </a>
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+                <a href="#about" class="nav__link" data-cursor="link">About</a>
+                <a href="#research" class="nav__link" data-cursor="link">Research</a>
+                <a href="#leadership" class="nav__link" data-cursor="link">Leadership</a>
+                <a href="#projects" class="nav__link" data-cursor="link">Projects</a>
+                <a href="#publications" class="nav__link" data-cursor="link">Publications</a>
+                <a href="#impact" class="nav__link" data-cursor="link">Global Impact</a>
+                <div class="nav__dropdown" id="navMore">
+                    <button type="button" class="nav__link nav__link--more" id="navMoreBtn" aria-expanded="false" aria-haspopup="true" aria-controls="navMoreMenu" data-cursor="link">
+                        More <span class="nav__chev" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="nav__menu" id="navMoreMenu" role="menu" aria-label="More sections">
+                        <a href="#education" class="nav__menu-link" role="menuitem" data-cursor="link">Education</a>
+                        <a href="#training" class="nav__menu-link" role="menuitem" data-cursor="link">Further Education &amp; Training</a>
+                        <a href="#teaching" class="nav__menu-link" role="menuitem" data-cursor="link">Teaching &amp; Capacity Building</a>
+                        <a href="#competences" class="nav__menu-link" role="menuitem" data-cursor="link">Personal Skills &amp; Competences</a>
+                        <a href="#expertise" class="nav__menu-link" role="menuitem" data-cursor="link">Skills &amp; Competencies</a>
+                        <a href="#tech" class="nav__menu-link" role="menuitem" data-cursor="link">Software &amp; Tools</a>
+                        <a href="#gallery" class="nav__menu-link" role="menuitem" data-cursor="link">In the Field</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav__link nav__link--cta" data-cursor="link">Contact</a>
+            </nav>
+            <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="mainContent" tabindex="-1">
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="hero">
+            <div class="hero__photo" aria-hidden="true"></div>
+            <div class="hero__grain" aria-hidden="true"></div>
+
+            <div class="hero__content">
+                <div class="hero__left">
+                    <span class="hero__eyebrow reveal-up">Director · Blue Nile Water Institute</span>
+                    <h1 class="hero__title">
+                        <span class="reveal-up">Dr. Goraw</span>
+                        <span class="reveal-up hero__title-accent">Goshu</span>
+                    </h1>
+                    <div class="hero__rotator reveal-up">
+                        <span class="hero__rotator-pre">Specialist in</span>
+                        <span class="hero__rotator-words" id="heroRotator" aria-live="polite">
+                            <span>Eco-hydrology</span>
+                            <span>Water Quality</span>
+                            <span>Climate Resilience</span>
+                            <span>Environmental Management</span>
+                            <span>Wetland Conservation</span>
+                        </span>
+                    </div>
+                    <p class="hero__roles reveal-up">
+                        Ecohydrologist · Water Resources Expert · Environmental Scientist · Research Leader
+                    </p>
+                    <div class="hero__cta reveal-up">
+                        <a href="#research" class="btn btn--primary" data-cursor="magnetic">Explore Research</a>
+                        <a href="assets/cv.pdf" class="btn btn--cv" target="_blank" rel="noopener" data-cursor="magnetic">
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM12 18v-4H8l4-4 4 4h-4v4h-4z"/></svg>
+                            Download CV
+                        </a>
+                        <a href="#contact" class="btn btn--ghost" data-cursor="magnetic">Get in touch</a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="stat" data-aos="fade-up" data-aos-delay="0">
+                            <span class="stat__num" data-count="28" data-suffix="+">0</span>
+                            <span class="stat__label">Years Experience</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                            <span class="stat__num" data-count="53" data-suffix="+">0</span>
+                            <span class="stat__label">Publications</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                            <span class="stat__num" data-count="10" data-suffix="+">0</span>
+                            <span class="stat__label">Years Leadership</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                            <span class="stat__num" data-count="13" data-suffix="+">0</span>
+                            <span class="stat__label">Researchers Supervised</span>
+                        </div>
+                    </div>
+                </div>
+                <aside class="hero__profile reveal-up" aria-label="Portrait of Dr. Goraw Goshu">
+                    <div class="hero__profile-frame glass">
+                        <img src="assets/images/dr-goraw-profile.png" alt="Dr. Goraw Goshu portrait" loading="eager" decoding="async" />
+                        <div class="hero__profile-meta">
+                            <strong>Dr. Goraw Goshu</strong>
+                            <span>Director · Blue Nile Water Institute</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#about" class="hero__scroll" data-cursor="link" aria-label="Scroll to content">
+                <span class="hero__scroll-line"></span>
+                <span class="hero__scroll-text">Scroll</span>
+            </a>
+        </section>
+
+        <!-- ============ ABOUT / TIMELINE ============ -->
+        <section class="section about section--parallax" id="about">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">01 — The Journey</span>
+                    <h2 class="section__title">From the classroom to the <span class="grad-text">Blue Nile</span></h2>
+                    <p class="section__lead">
+                        Nearly three decades dedicated to understanding water, protecting ecosystems,
+                        and building institutions that shape Africa's environmental future.
+                    </p>
+                </header>
+
+                <div class="timeline" id="timeline">
+                    <div class="timeline__line"><span class="timeline__progress" id="timelineProgress"></span></div>
+
+                    <div class="timeline__item" data-year="1997">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">1997</span>
+                            <h3>Teacher</h3>
+                            <p>Began a lifelong mission in education — sharing science and nurturing curiosity in the next generation of students.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2002">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2002</span>
+                            <h3>Development Expert</h3>
+                            <p>Translated science into action through community-centred environmental and water development programs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2008">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2008</span>
+                            <h3>Researcher</h3>
+                            <p>Advanced research in ecohydrology and water quality across the Lake Tana and Blue Nile basins.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2011">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2011</span>
+                            <h3>Lecturer &amp; Graduate Mentor</h3>
+                            <p>Taught and supervised postgraduate students in environmental and aquatic sciences at Bahir Dar University.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2014">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2014</span>
+                            <h3>Institute Founder</h3>
+                            <p>Co-founded research initiatives that established a lasting platform for water and environmental science.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2016">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2016</span>
+                            <h3>Lead Researcher</h3>
+                            <p>Directed flagship basin-scale studies on Lake Tana's ecological health, water quality and limnology.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2017">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2017</span>
+                            <h3>Secretariat — Tekeze Blue Hub Initiative</h3>
+                            <p>Coordinated a regional water-and-environment hub linking researchers, policymakers and communities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2018">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2018</span>
+                            <h3>Associate Professor</h3>
+                            <p>Appointed Associate Professor at Bahir Dar University, mentoring a new generation of scientists.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2020">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2020</span>
+                            <h3>Research Program Leader</h3>
+                            <p>Led major programs including the CAPAQUA East Africa Initiative and integrated wetland management.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2021">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2021</span>
+                            <h3>Director</h3>
+                            <p>Led the Blue Nile Water Institute — directing seven research units, 54+ researchers and national programs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2023">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2023</span>
+                            <h3>Principal Investigator</h3>
+                            <p>Secured and led international, grant-funded research advancing water security and climate resilience.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item" data-year="2026">
+                        <div class="timeline__card glass">
+                            <span class="timeline__year">2026</span>
+                            <h3>International Consultant</h3>
+                            <p>Advising global partners on ecohydrology, water resources and climate-resilient development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ RESEARCH IMPACT ============ -->
+        <section class="section research" id="research">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">02 — Research Impact</span>
+                    <h2 class="section__title">Eight disciplines, <span class="grad-text">one mission</span></h2>
+                    <p class="section__lead">A research portfolio spanning the molecular to the basin scale — from water chemistry to climate adaptation.</p>
+                </header>
+
+                <div class="research__grid" id="researchGrid">
+                    <!-- Cards injected via JS, with SSR-friendly fallback below -->
+                </div>
+
+                <div class="research__dashboard glass" data-aos="fade-up">
+                    <div class="research__chart">
+                        <h3 class="research__chart-title">Research focus distribution</h3>
+                        <canvas id="researchChart" height="300"></canvas>
+                    </div>
+                    <div class="research__chart">
+                        <h3 class="research__chart-title">Output over time</h3>
+                        <canvas id="outputChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LEADERSHIP ============ -->
+        <section class="section leadership section--parallax" id="leadership">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">03 — Executive Leadership</span>
+                    <h2 class="section__title">Directing science at <span class="grad-text">national scale</span></h2>
+                </header>
+
+                <div class="leadership__roles">
+                    <article class="role-card glass" data-aos="fade-up" data-cursor="magnetic">
+                        <div class="role-card__icon">◈</div>
+                        <h3>Director</h3>
+                        <p class="role-card__org">Blue Nile Water Institute</p>
+                        <p>Leading institutional research strategy, seven research units and a multidisciplinary team of scientists.</p>
+                    </article>
+                    <article class="role-card glass" data-aos="fade-up" data-aos-delay="100" data-cursor="magnetic">
+                        <div class="role-card__icon">⬡</div>
+                        <h3>Secretariat</h3>
+                        <p class="role-card__org">Tekeze Blue Hub Initiative</p>
+                        <p>Coordinating a regional water and environment hub connecting researchers, policy and communities.</p>
+                    </article>
+                    <article class="role-card glass" data-aos="fade-up" data-aos-delay="200" data-cursor="magnetic">
+                        <div class="role-card__icon">▲</div>
+                        <h3>Associate Professor</h3>
+                        <p class="role-card__org">Bahir Dar University</p>
+                        <p>Teaching, supervising and advancing graduate research in environmental and water sciences.</p>
+                    </article>
+                </div>
+
+                <div class="leadership__achievements">
+                    <div class="achieve glass" data-aos="zoom-in">
+                        <span class="achieve__num" data-count="54" data-suffix="+">0</span>
+                        <span class="achieve__label">Researchers Managed</span>
+                    </div>
+                    <div class="achieve glass" data-aos="zoom-in" data-aos-delay="100">
+                        <span class="achieve__num" data-count="7">0</span>
+                        <span class="achieve__label">Research Units</span>
+                    </div>
+                    <div class="achieve glass" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="achieve__num" data-count="12" data-suffix="+">0</span>
+                        <span class="achieve__label">International Partnerships</span>
+                    </div>
+                    <div class="achieve glass" data-aos="zoom-in" data-aos-delay="300">
+                        <span class="achieve__num" data-count="9" data-suffix="+">0</span>
+                        <span class="achieve__label">Major Research Programs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">04 — Featured Projects</span>
+                    <h2 class="section__title">Flagship <span class="grad-text">field programs</span></h2>
+                    <p class="section__lead">Selected case studies translating research into measurable environmental impact.</p>
+                </header>
+
+                <div class="projects__grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ PUBLICATIONS ============ -->
+        <section class="section publications" id="publications">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">05 — Publication Database</span>
+                    <h2 class="section__title">A body of <span class="grad-text">peer-reviewed</span> science</h2>
+                    <p class="section__lead">Selected peer-reviewed work sourced from Dr. Goshu's verified profile —
+                        <a class="pub__scholar-link" href="https://scholar.google.com/citations?user=mFbPbVwAAAAJ&hl=en" target="_blank" rel="noopener" data-cursor="link">view full Google Scholar profile ↗</a>.
+                    </p>
+                </header>
+
+                <div class="pub__controls glass" data-aos="fade-up">
+                    <div class="pub__search">
+                        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+                        <input type="search" id="pubSearch" placeholder="Search publications, topics, journals…" aria-label="Search publications" />
+                    </div>
+                    <div class="pub__filters" id="pubFilters" role="tablist" aria-label="Publication filters"></div>
+                </div>
+
+                <div class="pub__list" id="pubList" aria-live="polite"></div>
+                <div class="pub__empty" id="pubEmpty" hidden>No publications match your search.</div>
+            </div>
+        </section>
+
+        <!-- ============ GLOBAL IMPACT MAP ============ -->
+        <section class="section impact" id="impact">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">06 — Global Footprint</span>
+                    <h2 class="section__title">Collaborations across <span class="grad-text">four continents</span></h2>
+                    <p class="section__lead">Conferences, research collaborations and training programs spanning the globe.</p>
+                </header>
+
+                <div class="impact__layout">
+                    <div class="impact__globe glass">
+                        <canvas id="globeCanvas" aria-label="Interactive globe of international collaborations"></canvas>
+                        <div class="impact__legend">
+                            <span><i class="dot dot--conf"></i>Conferences</span>
+                            <span><i class="dot dot--collab"></i>Collaborations</span>
+                            <span><i class="dot dot--train"></i>Training</span>
+                        </div>
+                    </div>
+                    <ul class="impact__countries" id="impactCountries"></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section class="section education section--parallax" id="education">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">07 — Academic Foundation</span>
+                    <h2 class="section__title">World-class <span class="grad-text">education</span></h2>
+                </header>
+                <div class="education__grid">
+                    <article class="edu-card glass" data-aos="fade-up" data-cursor="magnetic">
+                        <span class="edu-card__badge">PhD</span>
+                        <h3>Doctor of Philosophy</h3>
+                        <p class="edu-card__org">Wageningen University, Netherlands</p>
+                        <p class="edu-card__desc">Ecohydrology & Aquatic Ecology — advanced research on tropical lake systems and water quality.</p>
+                    </article>
+                    <article class="edu-card glass" data-aos="fade-up" data-aos-delay="100" data-cursor="magnetic">
+                        <span class="edu-card__badge">MSc</span>
+                        <h3>Master of Science</h3>
+                        <p class="edu-card__org">UNESCO-IHE, Netherlands</p>
+                        <p class="edu-card__desc">Water Quality Management — integrated approaches to freshwater and environmental protection.</p>
+                    </article>
+                    <article class="edu-card glass" data-aos="fade-up" data-aos-delay="200" data-cursor="magnetic">
+                        <span class="edu-card__badge">BSc</span>
+                        <h3>Bachelor of Science</h3>
+                        <p class="edu-card__org">Addis Ababa University, Ethiopia</p>
+                        <p class="edu-card__desc">Biology & Environmental Science — foundation in ecology and the natural sciences.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FURTHER EDUCATION & TRAINING ============ -->
+        <section class="section training" id="training">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">08 — Further Education &amp; Training</span>
+                    <h2 class="section__title">A culture of <span class="grad-text">lifelong learning</span></h2>
+                    <p class="section__lead">Continuous professional development across modelling, climate accountability, data science and field science — click any milestone to expand.</p>
+                </header>
+                <div class="train-timeline" id="trainTimeline">
+                    <span class="train-timeline__path" id="trainPath"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TEACHING & CAPACITY BUILDING ============ -->
+        <section class="section teaching" id="teaching">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">09 — Teaching &amp; Capacity Building</span>
+                    <h2 class="section__title">Educator &amp; <span class="grad-text">capacity builder</span></h2>
+                    <p class="section__lead">Courses and trainings delivered across doctoral, graduate, professional and regional programs.</p>
+                </header>
+                <div class="teaching__stats" id="teachingStats"></div>
+                <div class="teaching__grid" id="teachingGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ PERSONAL SKILLS & COMPETENCES ============ -->
+        <section class="section competences" id="competences">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">10 — Personal Skills &amp; Competences</span>
+                    <h2 class="section__title">Executive <span class="grad-text">leadership profile</span></h2>
+                </header>
+                <div class="competences__layout">
+                    <div class="competences__radar glass" data-aos="fade-right">
+                        <h3 class="skills__chart-title">Leadership competency radar</h3>
+                        <canvas id="competenceChart"></canvas>
+                    </div>
+                    <div class="competences__side">
+                        <div class="competences__cards" id="competenceCards"></div>
+                        <div class="languages glass" data-aos="fade-left">
+                            <h3 class="skills__chart-title">Language proficiency</h3>
+                            <div class="languages__list" id="languageBars"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS & COMPETENCIES (EXPERTISE) ============ -->
+        <section class="section expertise" id="expertise">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">11 — Skills &amp; Competencies</span>
+                    <h2 class="section__title">World-class <span class="grad-text">areas of expertise</span></h2>
+                    <p class="section__lead">Depth across the full water, environment and research-leadership spectrum.</p>
+                </header>
+                <div class="expertise__grid" id="expertiseGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ SPECIALIZED SOFTWARE & TECHNICAL TOOLS ============ -->
+        <section class="section tech" id="tech">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">12 — Specialized Software &amp; Tools</span>
+                    <h2 class="section__title">The <span class="grad-text">technology stack</span></h2>
+                    <p class="section__lead">A categorised ecosystem of modelling, geospatial, analytical and field-research tools.</p>
+                </header>
+                <div class="tech__grid" id="techGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ PUBLICATION STATISTICS ============ -->
+        <section class="section stats-band section--parallax" id="statsBand">
+            <div class="container">
+                <div class="stats-band__grid">
+                    <div class="stats-band__item" data-aos="fade-up">
+                        <span class="stats-band__num" data-count="53" data-suffix="+">0</span>
+                        <span class="stats-band__label">Publications</span>
+                    </div>
+                    <div class="stats-band__item" data-aos="fade-up" data-aos-delay="80">
+                        <span class="stats-band__num" data-count="28" data-suffix="+">0</span>
+                        <span class="stats-band__label">Years Experience</span>
+                    </div>
+                    <div class="stats-band__item" data-aos="fade-up" data-aos-delay="160">
+                        <span class="stats-band__num" data-count="20" data-suffix="+">0</span>
+                        <span class="stats-band__label">Intl. Presentations</span>
+                    </div>
+                    <div class="stats-band__item" data-aos="fade-up" data-aos-delay="240">
+                        <span class="stats-band__num" data-count="13" data-suffix="+">0</span>
+                        <span class="stats-band__label">Students Supervised</span>
+                    </div>
+                    <div class="stats-band__item" data-aos="fade-up" data-aos-delay="320">
+                        <span class="stats-band__num" data-count="100000" data-suffix="+" data-format="euro">0</span>
+                        <span class="stats-band__label">Euro Research Funding</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MEDIA GALLERY ============ -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">13 — In the Field</span>
+                    <h2 class="section__title">Moments from the <span class="grad-text">work</span></h2>
+                </header>
+                <div class="gallery__grid" id="galleryGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact section--parallax" id="contact">
+            <div class="container">
+                <header class="section__head" data-aos="fade-up">
+                    <span class="section__kicker">14 — Get in Touch</span>
+                    <h2 class="section__title">Let's advance <span class="grad-text">water science</span> together</h2>
+                </header>
+
+                <div class="contact__layout">
+                    <div class="contact__info glass" data-aos="fade-right">
+                        <h3>Dr. Goraw Goshu</h3>
+                        <p class="contact__role">Director, Blue Nile Water Institute</p>
+                        <ul class="contact__details">
+                            <li><span>Location</span><a href="https://maps.google.com/?q=Bahir+Dar,+Ethiopia" target="_blank" rel="noopener" data-cursor="link">Bahir Dar, Ethiopia</a></li>
+                            <li><span>Email</span><a href="mailto:goshugoraw@gmail.com" data-cursor="link">goshugoraw@gmail.com</a></li>
+                            <li><span>Phone</span><a href="tel:+251910862033" data-cursor="link">+251 910 862 033</a></li>
+                        </ul>
+                        <a href="assets/cv.pdf" class="btn btn--cv btn--cv-block" target="_blank" rel="noopener" data-cursor="magnetic">
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM12 18v-4H8l4-4 4 4h-4v4h-4z"/></svg>
+                            Download full CV (PDF)
+                        </a>
+                        <div class="contact__socials">
+                            <a href="https://www.researchgate.net/profile/Goraw-Goshu" target="_blank" rel="noopener" aria-label="ResearchGate — Dr. Goraw Goshu" data-cursor="magnetic" class="social">RG</a>
+                            <a href="https://www.linkedin.com/in/goraw-goshu-phd-24260399/" target="_blank" rel="noopener" aria-label="LinkedIn — Dr. Goraw Goshu" data-cursor="magnetic" class="social social--linkedin">
+                                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=mFbPbVwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar — Dr. Goraw Goshu" data-cursor="magnetic" class="social">GS</a>
+                            <a href="https://orcid.org/0000-0001-9629-0126" target="_blank" rel="noopener" aria-label="ORCID — Dr. Goraw Goshu" data-cursor="magnetic" class="social">iD</a>
+                        </div>
+                        <div class="contact__map">
+                            <iframe
+                                title="Bahir Dar, Ethiopia map"
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=37.30%2C11.55%2C37.44%2C11.63&layer=mapnik&marker=11.5936%2C37.3908"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <form class="contact__form glass" id="contactForm" data-aos="fade-left" novalidate>
+                        <div class="field">
+                            <input type="text" id="cName" name="name" required placeholder=" " data-cursor="link" />
+                            <label for="cName">Full name</label>
+                        </div>
+                        <div class="field">
+                            <input type="email" id="cEmail" name="email" required placeholder=" " data-cursor="link" />
+                            <label for="cEmail">Email address</label>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="cSubject" name="subject" placeholder=" " data-cursor="link" />
+                            <label for="cSubject">Subject</label>
+                        </div>
+                        <div class="field">
+                            <textarea id="cMessage" name="message" rows="5" required placeholder=" " data-cursor="link"></textarea>
+                            <label for="cMessage">Your message</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--submit" id="submitBtn" data-cursor="magnetic">
+                            <span class="btn__label">Send message</span>
+                            <span class="btn__loader"></span>
+                            <span class="btn__check">✓ Sent</span>
+                        </button>
+                        <p class="contact__note" id="formNote" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="footer__mark">GG</span>
+                <div>
+                    <strong>Dr. Goraw Goshu</strong>
+                    <span>Director · Blue Nile Water Institute</span>
+                </div>
+            </div>
+            <nav class="footer__links" aria-label="Footer">
+                <a href="#about" data-cursor="link">About</a>
+                <a href="#research" data-cursor="link">Research</a>
+                <a href="#projects" data-cursor="link">Projects</a>
+                <a href="#publications" data-cursor="link">Publications</a>
+                <a href="#contact" data-cursor="link">Contact</a>
+            </nav>
+            <p class="footer__copy">© <span id="year"></span> Dr. Goraw Goshu · Crafted for water, earth & science.</p>
+        </div>
+    </footer>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel glass">
+            <button class="modal__close" data-modal-close aria-label="Close" data-cursor="magnetic">×</button>
+            <div class="modal__hero" id="modalHero"></div>
+            <div class="modal__body">
+                <span class="modal__tag" id="modalTag"></span>
+                <h3 id="modalTitle"></h3>
+                <p class="modal__lead" id="modalLead"></p>
+                <div class="modal__grid" id="modalGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox__close" data-lightbox-close aria-label="Close" data-cursor="magnetic">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous">‹</button>
+        <figure class="lightbox__figure">
+            <img id="lightboxImg" alt="" />
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next">›</button>
+    </div>
+
+    <!-- ============ LIBRARIES ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+
+    <!-- ============ APP SCRIPTS ============ -->
+    <script src="js/publications.js" defer></script>
+    <script src="js/three-scene.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

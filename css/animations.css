@@ -1,0 +1,74 @@
+/* =====================================================================
+   animations.css — Loader, reveals & motion effects
+   ===================================================================== */
+
+/* ---------- LOADING SCREEN ---------- */
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(1000px 700px at 50% 40%, #0a1330, var(--bg));
+    transition: opacity 0.9s var(--ease), visibility 0.9s var(--ease);
+}
+.loader.is-hidden { opacity: 0; visibility: hidden; }
+.loader__inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.loader__particles { position: absolute; inset: -160px; width: 420px; height: 420px; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+
+.loader__ripple { position: relative; width: 120px; height: 120px; margin-bottom: 1.5rem; }
+.loader__ripple span {
+    position: absolute; inset: 0; border-radius: 50%;
+    border: 2px solid var(--teal);
+    animation: rippleOut 2.4s var(--ease) infinite;
+    opacity: 0;
+}
+.loader__ripple span:nth-child(2) { animation-delay: 0.8s; border-color: var(--ocean); }
+.loader__ripple span:nth-child(3) { animation-delay: 1.6s; border-color: var(--gold); }
+@keyframes rippleOut {
+    0% { transform: scale(0.2); opacity: 0.9; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+.loader__ripple::after {
+    content: ""; position: absolute; inset: 38%; border-radius: 50%;
+    background: var(--grad-ocean); box-shadow: 0 0 30px var(--teal);
+    animation: corePulse 2s var(--ease) infinite;
+}
+@keyframes corePulse { 0%, 100% { transform: scale(0.85); } 50% { transform: scale(1.1); } }
+
+.loader__brand { font-family: var(--font-display); font-weight: 700; letter-spacing: 0.3em; font-size: 1.1rem; }
+.loader__sub { color: var(--ink-dim); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem; }
+.loader__progress { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
+.loader__bar { width: 220px; height: 3px; border-radius: 4px; background: rgba(255,255,255,0.1); overflow: hidden; }
+.loader__bar span { display: block; height: 100%; width: 0; background: var(--grad-aqua); box-shadow: 0 0 12px var(--teal); transition: width 0.2s linear; }
+.loader__percent { font-family: var(--font-display); font-size: 0.85rem; color: var(--teal); }
+
+/* ---------- SCROLL PROGRESS ---------- */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--grad-aqua); z-index: 150; box-shadow: 0 0 12px var(--teal); }
+
+/* ---------- REVEAL (hero) ---------- */
+.reveal-up { opacity: 0; transform: translateY(30px); }
+.reveal-up.is-in { animation: revealUp 1s var(--ease) forwards; }
+@keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+
+/* ---------- FLOATING ELEMENTS ---------- */
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+.float { animation: float 6s ease-in-out infinite; }
+
+/* ---------- Text gradient shimmer ---------- */
+@keyframes shimmer { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
+
+/* ---------- Magnetic helper ---------- */
+[data-cursor="magnetic"] { transition: transform 0.3s var(--ease); }
+
+/* ---------- Glow ring used on globe section ---------- */
+.impact__globe::after {
+    content: ""; position: absolute; inset: 0; border-radius: var(--radius); pointer-events: none;
+    box-shadow: inset 0 0 80px rgba(10,147,150,0.12);
+}
+
+/* reduced motion: kill remaining animations */
+@media (prefers-reduced-motion: reduce) {
+    .loader__ripple span, .loader__ripple::after, .hero__scroll-line::after { animation: none; }
+    .reveal-up { opacity: 1; transform: none; }
+}

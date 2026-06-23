@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" role="img" aria-label="Blue Nile River">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#08412e"/><stop offset="1" stop-color="#0077b6"/></linearGradient></defs>
+  <rect width="600" height="560" fill="url(#g)"/>
+  <circle cx="470" cy="120" r="60" fill="#ffd166" opacity="0.85"/>
+  <path d="M260 0 C300 120 200 200 280 320 C340 420 240 480 300 560 L380 560 C320 480 420 420 360 320 C300 220 400 120 340 0 Z" fill="#48cae4" opacity="0.75"/>
+  <path d="M0 460 Q200 430 400 460 T600 460 V560 H0 Z" fill="#023e63" opacity="0.8"/>
+</svg>

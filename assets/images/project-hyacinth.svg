@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Lake Tana Water Hyacinth Initiative">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06324f"/><stop offset="1" stop-color="#0a9396"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2d6a4f"/><stop offset="1" stop-color="#52b788"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="640" cy="110" r="70" fill="#ffd166" opacity="0.85"/>
+  <g opacity="0.9">
+    <path d="M0 360 Q200 320 400 360 T800 360 V500 H0 Z" fill="#0077b6"/>
+    <path d="M0 410 Q200 380 400 410 T800 410 V500 H0 Z" fill="#023e63"/>
+  </g>
+  <g fill="url(#w)" opacity="0.95">
+    <circle cx="160" cy="330" r="26"/><circle cx="210" cy="345" r="20"/><circle cx="120" cy="350" r="18"/>
+    <circle cx="520" cy="335" r="24"/><circle cx="560" cy="350" r="18"/><circle cx="480" cy="350" r="16"/>
+    <circle cx="350" cy="340" r="22"/><circle cx="300" cy="352" r="16"/>
+  </g>
+  <text x="48" y="100" font-family="'Space Grotesk',sans-serif" font-size="26" fill="#ffd166" letter-spacing="3">RS-4C INITIATIVE</text>
+  <text x="48" y="150" font-family="'Poppins',sans-serif" font-size="40" font-weight="700" fill="#eaf2ff">Lake Tana</text>
+  <text x="48" y="195" font-family="'Poppins',sans-serif" font-size="40" font-weight="700" fill="#eaf2ff">Water Hyacinth</text>
+</svg>

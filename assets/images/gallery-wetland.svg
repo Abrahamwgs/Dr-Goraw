@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540" role="img" aria-label="Wetland Ecosystems">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#08412e"/><stop offset="1" stop-color="#2d6a4f"/></linearGradient></defs>
+  <rect width="600" height="540" fill="url(#g)"/>
+  <circle cx="120" cy="110" r="56" fill="#ffd166" opacity="0.8"/>
+  <g fill="#52b788"><path d="M120 420 C120 340 150 280 160 280 C170 280 200 340 200 420 Z"/><path d="M420 410 C420 330 448 272 458 272 C468 272 496 330 496 410 Z"/><path d="M280 430 C280 360 305 310 314 310 C323 310 348 360 348 430 Z"/></g>
+  <path d="M0 440 Q200 410 400 440 T600 440 V540 H0 Z" fill="#023e63" opacity="0.9"/>
+</svg>

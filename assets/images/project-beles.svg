@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Tana-Beles Water Resources Development Project">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#001f3f"/><stop offset="1" stop-color="#0a9396"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="160" cy="120" r="58" fill="#ffd166" opacity="0.8"/>
+  <path d="M0 250 L250 250 L300 360 L0 360 Z" fill="#023e63" opacity="0.8"/>
+  <path d="M300 360 L320 250 L360 250 L380 360 Z" fill="#0077b6"/>
+  <path d="M0 380 Q200 350 400 380 T800 380 V500 H0 Z" fill="#0077b6" opacity="0.85"/>
+  <path d="M0 420 Q200 395 400 420 T800 420 V500 H0 Z" fill="#023e63"/>
+  <text x="48" y="110" font-family="'Space Grotesk',sans-serif" font-size="24" fill="#ffd166" letter-spacing="3">DEVELOPMENT</text>
+  <text x="48" y="160" font-family="'Poppins',sans-serif" font-size="38" font-weight="700" fill="#eaf2ff">TanaBeles</text>
+  <text x="48" y="205" font-family="'Poppins',sans-serif" font-size="38" font-weight="700" fill="#eaf2ff">Water Resources</text>
+</svg>
